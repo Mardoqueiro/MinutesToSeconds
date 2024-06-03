@@ -4,10 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MinutesToSeconds</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Minutes to Seconds Convertor</h1>
+        <div class="input-container">
+            <label for="minutes">Minutes:</label>
+            <input type="number" id="minutes">
+            <select id="minutes-unit">
+                <option value="minutes">minutes</option>
+            </select>
+        </div>
+        <div class="input-container">
+            <label for="seconds">Seconds:</label>
+            <input type="number" id="seconds" disabled>
+            <select id="seconds-unit">
+                <option value="seconds">Seconds</option>
+            </select>
+        </div>
+        <button onclick="convertMinutesToSeconds()">Convert</button>    
+    </div>
+    </div>
 
-    
     <script src="script/code.js"></script>
 </body>
 </html>
